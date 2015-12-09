@@ -18,4 +18,4 @@ install:
 script:
   - travis_retry tox -- -m unit,integration
 
-build_image:drydock/u14pytpls:prod
+build_image: drydock/u14pytpls:prod
