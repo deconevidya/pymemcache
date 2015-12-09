@@ -10,10 +10,12 @@ env:
   - TOXENV=py33
   - TOXENV=py34
   - TOXENV=pypy
-  - TOXENV=pypy3
+  #- TOXENV=pypy3
 
 install:
   - travis_retry pip install tox
 
 script:
   - travis_retry tox -- -m unit,integration
+
+build_image:drydock/u14pytpls:prod
